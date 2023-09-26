@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> API y AJAX</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1> Bienvenido a la práctica de API y AJAX </h1>
+    <form onsubmit="obtenerImagenes(event)">
+        <label for="numeroImagenes">
+            <b>¿Cuántas imágenes de perritos quieres obtener?</b>
+        </label>
+        <input class="selectBreed" type="number" id="numeroImagenes">
+        <button class="bucarPerrito" type="submit">
+            Obtener
+        </button>
+        <button id="avancar" type="submit" disabled="disabled" class="buttonSiguiente">
+            <a href="/index2.html">Pagina siguiente</a>
+        </button>
+        <hr>
+    </form>
+    <div class="imagenes"></div>
+    <hr>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
+
+<!-- API DOG CEO  https://dog.ceo/dog-api/documentation/ -->
